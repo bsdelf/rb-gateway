@@ -64,7 +64,7 @@ func (repo *GitRepository) InstallHooks(cfgPath string, force bool) (err error) 
 		return
 	}
 
-	hookDir := filepath.Join(commonDir, "hooks")
+	hookDir := filepath.Join(commonDir, "custom-hooks")
 
 	if _, err = ensureDir(hookDir); err != nil {
 		return
